@@ -54,22 +54,22 @@ class TrendingSection extends Component {
   }
 
   renderLoadingView = () => (
-    <div className='loader-container' testid='loader'>
-      <Loader type='TailSpin' color='#D81F26' height={50} width={50} />
+    <div className="loader-container" testid="loader">
+      <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
 
   renderFailureView = () => (
-    <div className='failure-view'>
+    <div className="failure-view">
       <img
-        src='https://res.cloudinary.com/dc2b69ycq/image/upload/v1670040709/Movies%20App/alert-triangle_sc1zom.png'
-        alt='failure view'
-        className='poster-failure-image'
+        src="https://res.cloudinary.com/dc2b69ycq/image/upload/v1670040709/Movies%20App/alert-triangle_sc1zom.png"
+        alt="failure view"
+        className="poster-failure-image"
       />
-      <p className='failure-title'>Something went wrong. Please try again</p>
+      <p className="failure-title">Something went wrong. Please try again</p>
       <button
-        type='button'
-        className='failure-retry-button'
+        type="button"
+        className="failure-retry-button"
         onClick={this.getTrendingNowData}
       >
         Try Again
